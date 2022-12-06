@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Expence"
+        android:title="Expence"
+        android:icon="@drawable/ic_baseline_account_balance_wallet_24"/>
+    <item android:id="@+id/Income"
+        android:title="Income"
+        android:icon="@drawable/ic_baseline_add_card_24"/>
+    <item android:id="@+id/Balance"
+        android:title="Balance"
+        android:icon="@drawable/ic_baseline_account_balance_24"/>
+
+</menu>
