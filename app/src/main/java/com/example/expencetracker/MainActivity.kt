@@ -2,6 +2,8 @@ package com.example.expencetracker
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
@@ -11,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
+
         setContentView(binding.root)
         ChangeFragment(Expense_Fragment())
 
@@ -18,11 +21,15 @@ class MainActivity : AppCompatActivity() {
 
 
             when(it.itemId){
+                R.id.Home ->{
+
+                }
                 R.id.Expence ->{
                     ChangeFragment(Expense_Fragment())
                 }
                 R.id.Income ->{
-                    ChangeFragment(Income())
+                    ChangeFragment(fragment_income())
+
                 }
                 R.id.Balance ->{
                     ChangeFragment(Balanse())
